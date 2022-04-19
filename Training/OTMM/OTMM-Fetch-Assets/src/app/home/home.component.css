@@ -12,10 +12,13 @@
     width: 250px;
     height: 250px;
     padding: 20px;
+
   }
   
   .assets-container {
     display: flex;
-    justify-self: start;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
   }
   

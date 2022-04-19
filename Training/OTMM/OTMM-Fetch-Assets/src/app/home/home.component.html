@@ -3,7 +3,7 @@
     <div (click)="onClickAsset(asset.asset_id)" class="asset-container">
       <img
         class="asset-img"
-        :src="{{ baseUrl }}asset.master_content_info.url"
+        src="{{ baseUrl.concat(asset.rendition_content.thumbnail_content.url) }}"
         alt="thumbnail"
       />
       <h3>{{ asset.name }}</h3>
