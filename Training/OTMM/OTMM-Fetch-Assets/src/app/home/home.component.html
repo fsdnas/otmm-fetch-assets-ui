@@ -1,0 +1,12 @@
+<div *ngIf="listOfAssets" class="assets-container">
+  <div *ngFor="let asset of listOfAssets">
+    <div (click)="onClickAsset(asset.asset_id)" class="asset-container">
+      <img
+        class="asset-img"
+        :src="{{ baseUrl }}asset.master_content_info.url"
+        alt="thumbnail"
+      />
+      <h3>{{ asset.name }}</h3>
+    </div>
+  </div>
+</div>
