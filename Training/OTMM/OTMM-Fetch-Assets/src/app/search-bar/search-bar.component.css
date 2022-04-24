@@ -1,9 +1,10 @@
 .search-bar-bg {
-    background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
+    margin-bottom: 20px;
   }
   input {
-    width: 80%;
+    width: 99%;
     padding: 10px;
   }
   

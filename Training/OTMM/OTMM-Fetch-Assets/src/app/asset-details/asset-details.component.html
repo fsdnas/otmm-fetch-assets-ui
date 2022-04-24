@@ -1,1 +1,19 @@
-<p>asset-details works!</p>
+<div *ngIf="assetDetails">
+  <img
+    class="asset-img"
+    [src]="
+      baseURL.concat(thumbnail.rendition_content.thumbnail_content.url)
+        | protectedImage
+        | async
+    "
+    alt="thumbnail"
+  />
+  <div>
+    <h2>Metadata</h2>
+    <div *ngFor="let a of assetDetails">
+      <div *ngFor="let asset of a.metadata_element_list">
+        <strong>{{ asset.name }}:</strong><span>{{ asset.value?.value?.value }}</span>
+      </div>
+    </div>
+  </div>
+</div>

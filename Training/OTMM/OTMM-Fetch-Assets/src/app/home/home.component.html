@@ -3,10 +3,17 @@
     <div (click)="onClickAsset(asset.asset_id)" class="asset-container">
       <img
         class="asset-img"
-        src="{{ baseUrl.concat(asset.rendition_content.thumbnail_content.url) }}"
+        [src]="
+          baseUrl.concat(asset.rendition_content.thumbnail_content.url)
+            | protectedImage
+            | async
+        "
         alt="thumbnail"
       />
       <h3>{{ asset.name }}</h3>
     </div>
   </div>
+</div>
+<div *ngIf="listOfAssets.length===0">
+  No results found! Retry with other keyword
 </div>

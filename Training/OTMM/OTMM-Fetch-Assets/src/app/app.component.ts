@@ -17,5 +17,6 @@ export class AppComponent {
   ngOnInit(): void {
     console.log(this.assetKeyword);
     // this._assets.searchByKeyWord('pooh');
+    this._assets.login();
   }
 }

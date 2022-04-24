@@ -45,10 +45,6 @@ export class AssetsService {
     this.assetValue$.next(asset);
   }
 
-  // assetsList$: Subject<any[]> = new Subject();
-  // getListOfAssets() {
-  //   this.assetsList$.next(this.listOfAssets);
-  // }
   //-----------------------------------------------------
 
   constructor(
@@ -105,30 +101,5 @@ export class AssetsService {
     });
   }
 
-  // //--------------------Search operation------------------------------------
-  // assets: any;
-  // listOfAssets: any;
-  // searchByKeyWord(keyword: string) {
-  //   const headers = new HttpHeaders({
-  //     'X-Requested-By': localStorage.getItem('sessionId')!,
-  //     OTDSToken: localStorage.getItem('OTDSTicket')!,
-  //   });
-
-  //   return this._http
-  //     .get(this._constants.KEYWORD_SEARCH + keyword, { headers: headers })
-  //     .subscribe((data: any) => {
-  //       this.assets = data;
-  //       this.listOfAssets = this.assets['search_result_resource']['asset_list'];
-  //       console.log(this.listOfAssets);
-  //     });
-  // }
-
-  // keyWord = '';
-  // assetList: any;
-  // ngOnInit(): void {
-  //   this.assetValue$.subscribe((d) => {
-  //     this.keyWord = d;
-  //     this.assetList = this.searchByKeyWord(this.keyWord);
-  //   });
-  // }
+ 
 }

@@ -1,24 +1,32 @@
 .asset-img {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-  }
-  
-  .asset-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aqua;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
 
-  }
+.asset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: cornsilk; */
+  min-width: 250px;
+  height: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 10px;
   
-  .assets-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top:20px;
-  }
-  
+}
+
+.assets-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 2px 16px;
+  flex-wrap:wrap;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.asset-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

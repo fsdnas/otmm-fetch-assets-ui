@@ -15,4 +15,6 @@ export class ConstantsService {
 
   public KEYWORD_SEARCH =
       'http://training-otmm.acheron-tech.com:11090/otmmapi/v6/search/text?keyword_query='
+
+      public GET_ASSET_BY_ID='http://training-otmm.acheron-tech.com:11090/otmmapi/v6/assets/'
 }

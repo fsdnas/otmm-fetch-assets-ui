@@ -7,6 +7,7 @@ import { AssetDetailsComponent } from './asset-details/asset-details.component';
 import { HomeComponent } from './home/home.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProtectedImagePipe } from './protected-image.pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     AssetDetailsComponent,
     HomeComponent,
     SearchBarComponent,
+    ProtectedImagePipe,
   ],
   imports: [
     BrowserModule,HttpClientModule,
